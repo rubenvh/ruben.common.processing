@@ -84,6 +84,12 @@ public class DrawingSystem implements IDrawingSystem
 		return target;
 	}
 	
+	public Line AddLine(Line target) 
+	{
+		_graphics.Add(target);
+		SetDrawingPen(target.getP2());
+		return target;
+	}
 	
 	public void Wipe(Point target)
 	{

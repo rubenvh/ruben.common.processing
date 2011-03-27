@@ -9,4 +9,6 @@ public interface IWindowedImageSource extends IImageSource {
 	
 	PImage diff(Region regionOfInterest);
 	
+	PImage diff();
+	
 }

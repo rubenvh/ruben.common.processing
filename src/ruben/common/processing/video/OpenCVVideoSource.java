@@ -72,6 +72,11 @@ public class OpenCVVideoSource extends BaseWindowedImageSource {
 
 	}
 	
+	public PImage diff() 
+	{
+		cv.absDiff();   
+		return cv.image();
+	}
 	public PImage diff(Region regionOfInterest)
 	{
 		int x1 = regionOfInterest.get_start().get_x();
@@ -80,8 +85,7 @@ public class OpenCVVideoSource extends BaseWindowedImageSource {
 		int y2 = regionOfInterest.get_end().get_y();
 		
 		cv.ROI(x1, y1, x2, y2);
-		cv.absDiff();   
-		return cv.image();  
+		return diff();
 	}
 
 	public int get_height() {
