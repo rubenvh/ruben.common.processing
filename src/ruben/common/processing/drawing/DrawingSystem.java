@@ -4,6 +4,7 @@ package ruben.common.processing.drawing;
 import ruben.common.drawing.GraphicComposite;
 import ruben.common.drawing.IDrawingSystem;
 import ruben.common.drawing.IGraphicObject;
+import ruben.common.drawing.IGraphicObjectVisitor;
 import ruben.common.drawing.KillerVisitor;
 import ruben.common.drawing.Line;
 import ruben.common.drawing.Point;
