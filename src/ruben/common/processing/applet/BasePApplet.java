@@ -72,6 +72,19 @@ public abstract class BasePApplet extends PApplet implements IPApplet {
 			if (drawer.is_active()) drawer.keyReleased();
 		}
 	}
+	
+	public void stop() {
+		
+		Iterator<IAppletDrawer> it = _drawers.iterator();
+		while (it.hasNext())
+		{
+			IAppletDrawer drawer = it.next();
+			
+			if (drawer.is_active()) drawer.cleanup();
+		}
+		
+		super.stop();
+	}
 
 	
 	protected abstract void load_applet_drawers();

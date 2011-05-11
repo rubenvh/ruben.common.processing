@@ -88,4 +88,10 @@ public class MouseDrawingAppletDrawer extends BaseDrawingAppletDrawer
 		}
 	}
 
+	public void cleanup()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
 }

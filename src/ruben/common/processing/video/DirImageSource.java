@@ -3,6 +3,7 @@ package ruben.common.processing.video;
 import java.io.File;
 import java.io.FilenameFilter;
 
+import processing.core.PApplet;
 import processing.core.PImage;
 import ruben.common.processing.applet.BasePApplet;
 import ruben.common.processing.utils.DirLoadStrategy;
@@ -68,9 +69,11 @@ public class DirImageSource extends BaseImageSource {
 				
 				@Override
 				public boolean accept(File dir, String name) {
-					return name.endsWith(".png");
+					return name.endsWith(".png") || name.endsWith(".jpg") || name.endsWith(".tif");
 				}
 			});
+			
+			PApplet.println(String.format("Images found in directory: %d", _images.length));
 			
 			step();
 		}

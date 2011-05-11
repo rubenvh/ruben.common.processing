@@ -59,7 +59,7 @@ public class ImageSource extends BaseImageSource implements IImageSource {
 
 	@Override
 	public void step() {
-		//super.step();
+		super.step();
 		
 	}
 

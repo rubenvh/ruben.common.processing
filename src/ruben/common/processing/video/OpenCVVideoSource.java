@@ -60,6 +60,7 @@ public class OpenCVVideoSource extends BaseWindowedImageSource {
 		cv = new OpenCV( applet.get_papplet() );
 		
 		cv.movie( filename, width, height );    // load movie file
+		step();
 	}
 
 	public void step() {

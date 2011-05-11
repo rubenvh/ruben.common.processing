@@ -11,6 +11,7 @@ public interface IImageSource {
 	void load();
 	PImage get_current_image();	
 	void step();
+	void update();
 	
 	int get_width();
 	int get_height();

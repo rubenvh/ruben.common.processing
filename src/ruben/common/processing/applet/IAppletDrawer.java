@@ -16,4 +16,6 @@ public interface IAppletDrawer {
 
 	void keyReleased();
 	
+	void cleanup();
+	
 }

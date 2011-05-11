@@ -31,6 +31,10 @@ public abstract class BaseImageSource implements IImageSource {
 	}
 	
 	public void step() {
+		update();
+	}
+	
+	public void update() {
 		updateSmallImage();
 	}
 	
